@@ -1,0 +1,50 @@
+/* html{
+    background-color: red;
+} */
+body {
+	text-align: center;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 10px;
+	margin: 10px;
+}
+.header__item {
+	border: 1px solid red;
+}
+@media (width <= 360px) {
+    .header{
+        grid-template-columns: 1fr auto;
+    }
+}
+
+.portfolio__item img {
+	width: 200px;
+	height: auto;
+}
+
+@media  (width >= 1024px) {
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-content: space-between
+    }
+}
+
+@media screen and (width < 1024px) {
+	.portfolio {
+        display: flex;
+		flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 800px;
+        height: 400px;
+	}
+    
+	
+}
+
